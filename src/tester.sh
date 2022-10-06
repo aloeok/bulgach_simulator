@@ -1,3 +1,9 @@
+./tests_data_merger.sh
+MERGE_RES="${?}"
+
+if [ $MERGE_RES -eq "0" ]
+then
+
 while read PROG
 do
 	
@@ -12,7 +18,7 @@ do
 		echo "${PROG} : Compiled"
 		echo ""
 		
-		cat "test_list.txt" | grep "${PROG}" | grep "in" > "test_input.txt"
+		cat "all_test_data.btdata" | grep "${PROG}" | grep "in" > "current_test_in_data.btdata"
 
 		while read TEST
 		do
@@ -20,13 +26,13 @@ do
 			
 			INPUT_DATA=$(echo $TEST | cut -d ':' -f 4)
 			
-			COR_ANS=$(cat "test_list.txt" | grep "${PROG}" | grep "${TEST_ID}" | grep "ou" | cut -d ':' -f 4)
+			COR_ANS=$(cat "all_test_data.btdata" | grep "${PROG}" | grep "${TEST_ID}" | grep "ou" | cut -d ':' -f 4)
 			
-			REQ_EXIT=$(cat "test_list.txt" | grep "${PROG}" | grep "${TEST_ID}" | grep "ex" | cut -d ':' -f 4)
+			REQ_EXIT=$(cat "all_test_data.btdata" | grep "${PROG}" | grep "${TEST_ID}" | grep "ex" | cut -d ':' -f 4)
 			REQ_EXIT=${REQ_EXIT%$'\n'}
 			REQ_EXIT=${REQ_EXIT%$'\r'}
 			
-			ARG_DATA=$(cat "test_list.txt" | grep "${PROG}" | grep "${TEST_ID}" | grep "ar" | cut -d ':' -f 4)
+			ARG_DATA=$(cat "all_test_data.btdata" | grep "${PROG}" | grep "${TEST_ID}" | grep "ar" | cut -d ':' -f 4)
 			ARG_DATA=${ARG_DATA%$'\n'}
 			ARG_DATA=${ARG_DATA%$'\r'}
 			
@@ -36,7 +42,7 @@ do
 			if [ "${EXIT_CODE}" = "${REQ_EXIT}" ]
 			then
 				CHECK_DATA=$(echo -e "${COR_ANS}\n${ANS}")
-				echo $CHECK_DATA | timeout 2 ./ans_checker $ARG_DATA
+				echo $CHECK_DATA | timeout 3 ./ans_checker $ARG_DATA
 				CHECK_RES=$(echo $?)
 				
 				if [ "${REQ_EXIT}" = "1" ] && [ "${ANS}" = "" ]
@@ -101,14 +107,15 @@ do
 		
 		echo ""
 			
-		done < "test_input.txt"
+		done < "current_test_in_data.btdata"
 		
+		echo "No more tests for ${PROG}"
 		echo "_________________________________"
 
 	else
 		
 		echo ""
-		echo "${PROG}.c : Not found or compilation error"
+		echo "${PROG}.c : Source file not found or compilation error"
 		echo ""
 		echo "Check for correct spelling,"
 		echo "program source or test script location"
@@ -117,7 +124,14 @@ do
 		echo "_________________________________"
 
 	fi
-	rm "test_input.txt" 2> /dev/null
-done < "progs_list.txt"
+	rm "current_test_in_data.btdata" 2> /dev/null
+done < "prog_list.btdata"
+
+rm "all_test_data.btdata" 2> /dev/null
+
+else
+echo "MERGING ERROR"
+
+fi
 
 $SHELL

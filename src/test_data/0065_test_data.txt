@@ -1,0 +1,51 @@
+--------------------------------------2-------------------65
+
+0065:test01:in:-1000000000
+0065:test01:ar:
+0065:test01:ou:
+0065:test01:ex:1
+
+0065:test02:in:-0.3
+0065:test02:ar:
+0065:test02:ou:
+0065:test02:ex:1
+
+0065:test03:in:0
+0065:test03:ar:
+0065:test03:ou:
+0065:test03:ex:1
+
+0065:test04:in:100
+0065:test04:ar:
+0065:test04:ou:
+0065:test04:ex:1
+
+0065:test05:in:kjegn
+0065:test05:ar:
+0065:test05:ou:
+0065:test05:ex:1
+
+0065:test06:in:1
+0065:test06:ar:-s 1
+0065:test06:ou:YES
+0065:test06:ex:0
+
+0065:test07:in:2
+0065:test07:ar:-s 1
+0065:test07:ou:NO
+0065:test07:ex:0
+
+0065:test08:in:40
+0065:test08:ar:-s 1
+0065:test08:ou:YES
+0065:test08:ex:0
+
+0065:test09:in:97
+0065:test09:ar:-s 1
+0065:test09:ou:YES
+0065:test09:ex:0
+
+0065:test10:in:99
+0065:test10:ar:-s 1
+0065:test10:ou:NO
+0065:test10:ex:0
