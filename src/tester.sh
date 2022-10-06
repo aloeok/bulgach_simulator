@@ -3,11 +3,12 @@ do
 	
 	PROG=${PROG%$'\n'}
 	PROG=${PROG%$'\r'}
-	gcc -Wall -c -std=c89 -Wall -Werror -pedantic -lm "${PROG}.c" 2> /dev/null && gcc -Wall -o "${PROG}" "${PROG}.o" 2> /dev/null
+	gcc -c -std=c89 -Wall -Werror -pedantic -lm "${PROG}.c" 2> /dev/null && gcc -Wall -o "${PROG}" "${PROG}.o" 2> /dev/null
 	COMP_RES="${?}"
 	if [ $COMP_RES -eq "0" ]
 	then
 		
+		echo ""
 		echo "${PROG} : Compiled"
 		echo ""
 		
@@ -41,6 +42,7 @@ do
 				if [ "${REQ_EXIT}" = "1" ] && [ "${ANS}" = "" ]
 				then
 					echo "${PROG} : ${TEST_ID} : OK"
+					echo "(Tested for input: ${INPUT_DATA})"
 				elif [ "${REQ_EXIT}" = "1" ]
 				then
 					echo "${PROG} : ${TEST_ID} : EXTRA OUTPUT / RUNTIME ERROR"
@@ -77,6 +79,7 @@ do
 				elif [ "${CHECK_RES}" = "0" ]
 				then
 					echo "${PROG} : ${TEST_ID} : OK"
+					echo "(Tested for input: ${INPUT_DATA})"
 				else
 					echo "${PROG} : ${TEST_ID} : TESTER ERROR ${CHECK_RES}"
 					echo "Input data: ${INPUT_DATA}"
@@ -105,12 +108,16 @@ do
 	else
 		
 		echo ""
-		echo "_________________________________"
 		echo "${PROG}.c : Not found or compilation error"
+		echo ""
+		echo "Check for correct spelling,"
+		echo "program source or test script location"
+		echo "or compilation flags"
+		echo "(gcc -c -std=c89 -Wall -Werror -pedantic -lm <source_file>)"
 		echo "_________________________________"
 
 	fi
-
+	rm "test_input.txt" 2> /dev/null
 done < "progs_list.txt"
-rm "test_input.txt" 2> /dev/null
+
 $SHELL
