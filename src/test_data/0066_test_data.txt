@@ -46,7 +46,7 @@
 0066:test09:ou:
 0066:test09:ex:1
 
-0066:test10:in:5 2 hf 9 3.3
+0066:test10:in:5.iibi 2 hf 9 3.3
 0066:test10:ar:
 0066:test10:ou:
 0066:test10:ex:1
