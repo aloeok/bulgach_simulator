@@ -36,7 +36,7 @@ do
 			ARG_DATA=${ARG_DATA%$'\n'}
 			ARG_DATA=${ARG_DATA%$'\r'}
 			
-			ANS=$(echo $INPUT_DATA | timeout 10 "./${PROG}" 2>&1)
+			ANS=$(echo $INPUT_DATA | timeout 5 "./${PROG}" 2>&1)
 			EXIT_CODE=$(echo $?)
 			
 			if [ "${EXIT_CODE}" = "${REQ_EXIT}" ]
@@ -94,7 +94,7 @@ do
 				fi
 			elif [ "${EXIT_CODE}" = "124" ]
 			then
-				echo "${PROG} : ${TEST_ID} : PROGRAM WORKED >10 SECONDS (check for infinite loops)"
+				echo "${PROG} : ${TEST_ID} : PROGRAM WORKED > 5 SECONDS (check for infinite loops)"
 				echo "Input data: ${INPUT_DATA}"
 			else
 				echo "${PROG} : ${TEST_ID} : WRONG EXIT CODE / RUNTIME ERROR"
