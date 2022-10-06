@@ -8,8 +8,6 @@ do
 	if [ $COMP_RES -eq "0" ]
 	then
 		
-		echo ""
-		echo "_________________________________"
 		echo "${PROG} : Compiled"
 		echo ""
 		
@@ -46,76 +44,70 @@ do
 				elif [ "${REQ_EXIT}" = "1" ]
 				then
 					echo "${PROG} : ${TEST_ID} : EXTRA OUTPUT / RUNTIME ERROR"
-					echo "           Input data: ${INPUT_DATA}"
-					echo -e "               Answer:\n${ANS}"
-					echo "            Exit code: ${EXIT_CODE}"
-					echo "       Correct answer: ${COR_ANS}"
-					echo "    Correct exit code: ${REQ_EXIT}"
+					echo "Input data: ${INPUT_DATA}"
+					echo -e "Answer:\n${ANS}"
+					echo "Exit code: ${EXIT_CODE}"
+					echo "Correct answer: ${COR_ANS}"
+					echo "Correct exit code: ${REQ_EXIT}"
 				
 				elif [ "${CHECK_RES}" = "124" ]
 				then
 					echo "${PROG} : ${TEST_ID} : INCORRECT OUTPUT FORMAT"
-					echo "           Input data: ${INPUT_DATA}"
-					echo -e "               Answer:\n${ANS}"
-					echo "       Correct answer: ${COR_ANS}"
+					echo "Input data: ${INPUT_DATA}"
+					echo -e "Answer:\n${ANS}"
+					echo "Correct answer: ${COR_ANS}"
 				elif [ "${CHECK_RES}" = "3" ]
 				then
 					echo "${PROG} : ${TEST_ID} : INCORRECT TEST FILE DATA !!!"
-					echo "           Input data: ${INPUT_DATA}"
-					echo -e "               Answer:\n${ANS}"
-					echo "       Correct answer: ${COR_ANS}"
+					echo "Input data: ${INPUT_DATA}"
+					echo -e "Answer:\n${ANS}"
+					echo "Correct answer: ${COR_ANS}"
 				elif [ "${CHECK_RES}" = "2" ]
 				then
 					echo "${PROG} : ${TEST_ID} : INCORRECT OUTPUT FORMAT"
-					echo "           Input data: ${INPUT_DATA}"
-					echo -e "               Answer:\n${ANS}"
-					echo "       Correct answer: ${COR_ANS}"
+					echo "Input data: ${INPUT_DATA}"
+					echo -e "Answer:\n${ANS}"
+					echo "Correct answer: ${COR_ANS}"
 				elif [ "${CHECK_RES}" = "1" ]
 				then
 					echo "${PROG} : ${TEST_ID} : WRONG ANSWER"
-					echo "           Input data: ${INPUT_DATA}"
-					echo -e "               Answer:\n${ANS}"
-					echo "       Correct answer: ${COR_ANS}"
+					echo "Input data: ${INPUT_DATA}"
+					echo -e "Answer:\n${ANS}"
+					echo "Correct answer: ${COR_ANS}"
 				elif [ "${CHECK_RES}" = "0" ]
 				then
 					echo "${PROG} : ${TEST_ID} : OK"
 				else
 					echo "${PROG} : ${TEST_ID} : TESTER ERROR ${CHECK_RES}"
-					echo "           Input data: ${INPUT_DATA}"
-					echo -e "               Answer:\n${ANS}"
-					echo "       Correct answer: ${COR_ANS}"
+					echo "Input data: ${INPUT_DATA}"
+					echo -e "Answer:\n${ANS}"
+					echo "Correct answer: ${COR_ANS}"
 				fi
 			elif [ "${EXIT_CODE}" = "124" ]
 			then
 				echo "${PROG} : ${TEST_ID} : PROGRAM WORKED >10 SECONDS (check for infinite loops)"
-				echo "           Input data: ${INPUT_DATA}"
+				echo "Input data: ${INPUT_DATA}"
 			else
 				echo "${PROG} : ${TEST_ID} : WRONG EXIT CODE / RUNTIME ERROR"
-				echo "           Input data: ${INPUT_DATA}"
-				echo -e "               Answer:\n${ANS}"
-				echo "            Exit code: ${EXIT_CODE}"
-				echo "       Correct answer: ${COR_ANS}"
-				echo "    Correct exit code: ${REQ_EXIT}"
+				echo "Input data: ${INPUT_DATA}"
+				echo -e "Answer:\n${ANS}"
+				echo "Exit code: ${EXIT_CODE}"
+				echo "Correct answer: ${COR_ANS}"
+				echo "Correct exit code: ${REQ_EXIT}"
 			fi
-			
-			echo ""
+		
+		echo ""
 			
 		done < "test_input.txt"
 		
-		echo ""
 		echo "_________________________________"
-		echo ""
-		echo ""
 
 	else
 		
 		echo ""
 		echo "_________________________________"
 		echo "${PROG}.c : Not found or compilation error"
-		echo ""
 		echo "_________________________________"
-		echo ""
-		echo ""
 
 	fi
 

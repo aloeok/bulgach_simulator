@@ -63,8 +63,9 @@ int set_series_params (int argc, char** argv) {
 		}
 	}
 	
-	if (ans_series_count == 0)
+	if (ans_series_count == 0) {
 		return 1;
+	}
 	
 	return 0;
 }
@@ -86,8 +87,9 @@ int get_correct_ans () {
 				default:
 					return 1;
 			}
-			if (scheck != 1)
+			if (scheck != 1) {
 				return 1;
+			}
 		}
 	}
 	return 0;
