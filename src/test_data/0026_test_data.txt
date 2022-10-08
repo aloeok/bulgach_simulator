@@ -1,14 +1,37 @@
 
 ------------empty--test--list--------
 
-0026:test01:in:
+0026:test01:in:iwbe
 0026:test01:ar:
 0026:test01:ou:
-0026:test01:ex:
+0026:test01:ex:1
 
-0026:test02:in:
+0026:test02:in:6.2801
 0026:test02:ar:
 0026:test02:ou:
-0026:test02:ex:
+0026:test02:ex:1
 
+0026:test03:in:-0.001
+0026:test03:ar:
+0026:test03:ou:
+0026:test03:ex:1
 
+0026:test04:in:0
+0026:test04:ar:-lf 1
+0026:test04:ou:0
+0026:test04:ex:0
+
+0026:test05:in:2.8934
+0026:test05:ar:-lf 1
+0026:test05:ou:271.531123
+0026:test05:ex:0
+
+0026:test06:in:0.002
+0026:test06:ar:-lf 1
+0026:test06:ou:0.187690
+0026:test06:ex:0
+
+0026:test07:in:6.28
+0026:test07:ar:-lf 1
+0026:test07:ou:589.346600
+0026:test07:ex:0

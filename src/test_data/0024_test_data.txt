@@ -1,14 +1,53 @@
 
 ------------empty--test--list--------
 
-0024:test01:in:
+0024:test01:in:ijwnef
 0024:test01:ar:
 0024:test01:ou:
-0024:test01:ex:
+0024:test01:ex:1
 
-0024:test02:in:
+0024:test02:in:3.4.3.s
 0024:test02:ar:
 0024:test02:ou:
-0024:test02:ex:
+0024:test02:ex:1
 
+0024:test03:in:-3--3
+0024:test03:ar:
+0024:test03:ou:
+0024:test03:ex:1
+
+0024:test04:in:.
+0024:test04:ar:
+0024:test04:ou:
+0024:test04:ex:1
+
+0024:test05:in:0000j
+0024:test05:ar:
+0024:test05:ou:
+0024:test05:ex:1
+
+0024:test06:in:-2.83941 -2.83941 -2.83941 -2.83941
+0024:test06:ar:-lf 1
+0024:test06:ou:0.0
+0024:test06:ex:0
+
+0024:test07:in:6.6 0 0 -8.8
+0024:test07:ar:-lf 1
+0024:test07:ou:11.0
+0024:test07:ex:0
+
+0024:test08:in:234.092 -381.188 -19.1112 -1000
+0024:test08:ar:-lf 1
+0024:test08:ou:668.610613
+0024:test08:ex:0
+
+0024:test09:in:1 -2 3 -4
+0024:test09:ar:-lf 1
+0024:test09:ou:2.828427
+0024:test09:ex:0
+
+0024:test10:in:-0.001 0.002 0.003 -0.009
+0024:test10:ar:-lf 1
+0024:test10:ou:0.011705
+0024:test10:ex:0
 

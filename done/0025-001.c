@@ -23,9 +23,9 @@ int solution () {
 	b = find_len(cx, cy, ax, ay);
 	c = find_len(ax, ay, bx, by);
 	
-	if (a < 0.0001 || b < 0.0001 || c < 0.0001)
+	if (a < 0.00001 || b < 0.00001 || c < 0.00001)
 		return 1;
-	if ( (a + b <= c) || (b + c <= a) || (c + a <= b) )
+	if ( (a + b < c + 0.000001) || (b + c < a + 0.000001) || (c + a < b + 0.000001) )
 		return 1;
 	
 	printf("%f\n", perimeter(a, b, c));

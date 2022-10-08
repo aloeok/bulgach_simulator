@@ -1,9 +1,5 @@
 #include "stdio.h"
 
-double max (double a, double b) {
-	return (a > b) ? a : b;
-}
-
 int solution () {
 	int scheck;
 	double a, b, c, d;
@@ -14,10 +10,9 @@ int solution () {
 		return 1;
 	
 	if (a <= b && b <= c && c <= d) {
-		a = max(a, max(b, max(c, d)));
-		b = a;
-		c = a;
-		d = a;
+		a = d;
+		b = d;
+		c = d;
 	} else if ( !(a > c && c > b && b > d) ) {
 		a = a * a;
 		b = b * b;

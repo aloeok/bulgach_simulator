@@ -1,14 +1,28 @@
 
 ------------empty--test--list--------
 
-0043:test01:in:
+0043:test01:in:.3ojngr
 0043:test01:ar:
 0043:test01:ou:
-0043:test01:ex:
+0043:test01:ex:1
 
-0043:test02:in:
-0043:test02:ar:
-0043:test02:ou:
-0043:test02:ex:
+0043:test02:in:0 0 0
+0043:test02:ar:-lf 3
+0043:test02:ou:0 0 0
+0043:test02:ex:0
 
+0043:test03:in:-2 -2.4 3.98
+0043:test03:ar:-lf 3
+0043:test03:ou:-2 -2.4 15.8404
+0043:test03:ex:0
+
+0043:test04:in:-1 -1 -1
+0043:test04:ar:-lf 3
+0043:test04:ou:-1 -1 -1
+0043:test04:ex:0
+
+0043:test05:in:5 -6 9.1
+0043:test05:ar:-lf 3
+0043:test05:ou:25 -6 82.81
+0043:test05:ex:0
 

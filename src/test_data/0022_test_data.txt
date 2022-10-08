@@ -1,14 +1,53 @@
 
 ------------empty--test--list--------
 
-0022:test01:in:
+0022:test01:in:uenerg
 0022:test01:ar:
 0022:test01:ou:
-0022:test01:ex:
+0022:test01:ex:1
 
-0022:test02:in:
+0022:test02:in:2.2.oirjng
 0022:test02:ar:
 0022:test02:ou:
-0022:test02:ex:
+0022:test02:ex:1
 
+0022:test03:in:5 0 1
+0022:test03:ar:
+0022:test03:ou:
+0022:test03:ex:1
+
+0022:test04:in:5 5 1.57
+0022:test04:ar:
+0022:test04:ou:
+0022:test04:ex:1
+
+0022:test05:in:8 3 1.571
+0022:test05:ar:
+0022:test05:ou:
+0022:test05:ex:1
+
+0022:test06:in:10.1 2.1 -1
+0022:test06:ar:
+0022:test06:ou:
+0022:test06:ex:1
+
+0022:test07:in:23.91 13.9 1.101
+0022:test07:ar:-lf 1
+0022:test07:ou:186.365408
+0022:test07:ex:0
+
+0022:test08:in:5 4 1.5
+0022:test08:ar:-lf 1
+0022:test08:ou:31.728195
+0022:test08:ex:0
+
+0022:test09:in:134.195 122.983 1.345
+0022:test09:ar:-lf 1
+0022:test09:ou:3138.125234
+0022:test09:ex:0
+
+0022:test10:in:60 1 0.1
+0022:test10:ar:-lf 1
+0022:test10:ou:90.276121
+0022:test10:ex:0
 

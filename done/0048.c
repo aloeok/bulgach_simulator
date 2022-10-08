@@ -8,7 +8,7 @@ int solve_qeq (double a, double b, double c, double* x1, double* x2) {
 	if (d < 0)
 		return -1;
 	
-	if (fabs(d) < 0.0001)
+	if (fabs(d) < 0.00001)
 		res = 0;
 	
 	*x1 = ( -b + sqrt(d) ) / (2 * a);

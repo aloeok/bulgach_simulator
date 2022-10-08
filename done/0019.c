@@ -20,7 +20,7 @@ int solution () {
 	
 	if (scheck != 5)
 		return 1;
-	if (v1 < 0 || v2 < 0 || a1 < 0 || a2 < 0 || x <= 0)
+	if (v1 < 0 || v2 < 0 || a1 < 0 || a2 < 0 || x < 0)
 		return 1;
 	if (v1 + v2 + a1 + a2 < 0.00001)
 		return 1;

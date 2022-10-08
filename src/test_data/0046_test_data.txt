@@ -1,14 +1,48 @@
 
 ------------empty--test--list--------
 
-0046:test01:in:
+0046:test01:in:20h24m08.10.2022.MIEM.-1floor
 0046:test01:ar:
 0046:test01:ou:
-0046:test01:ex:
+0046:test01:ex:1
 
-0046:test02:in:
+0046:test02:in:-___-
 0046:test02:ar:
 0046:test02:ou:
-0046:test02:ex:
+0046:test02:ex:1
 
+0046:test03:in:tg-aloeok
+0046:test03:ar:
+0046:test03:ou:
+0046:test03:ex:1
+
+0046:test04:in:-2.784 -0.1
+0046:test04:ar:-lf 2
+0046:test04:ou:2.784 0.1
+0046:test04:ex:0
+
+0046:test05:in:-3.12 0
+0046:test05:ar:-lf 2
+0046:test05:ou:-2.62 0.5
+0046:test05:ex:0
+
+0046:test06:in:0.121 0.5
+0046:test06:ar:-lf 2
+0046:test06:ou:0.121 0.5
+0046:test06:ex:0
+
+0046:test07:in:0.121 0.499
+0046:test07:ar:-lf 2
+0046:test07:ou:0.0121 0.0499
+0046:test07:ex:0
+
+0046:test08:in:5 -5
+0046:test08:ar:-lf 2
+0046:test08:ou:5.5 -4.5
+0046:test08:ex:0
+
+0046:test09:in:5 200
+0046:test09:ar:-lf 2
+0046:test09:ou:0.5 20.0
+0046:test09:ex:0
 

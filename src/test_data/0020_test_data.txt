@@ -1,14 +1,43 @@
 
 ------------empty--test--list--------
 
-0020:test01:in:
+0020:test01:in:j
 0020:test01:ar:
 0020:test01:ou:
-0020:test01:ex:
+0020:test01:ex:1
 
-0020:test02:in:
+0020:test02:in:.2.2.3
 0020:test02:ar:
 0020:test02:ou:
-0020:test02:ex:
+0020:test02:ex:1
 
+0020:test03:in:1.3 0.1 0
+0020:test03:ar:
+0020:test03:ou:
+0020:test03:ex:1
+
+0020:test04:in:23 44.a
+0020:test04:ar:
+0020:test04:ou:
+0020:test04:ex:1
+
+0020:test05:in:-23.934 1.526 19
+0020:test05:ar:-lf 1
+0020:test05:ou:-193.80
+0020:test05:ex:0
+
+0020:test06:in:2 -3 1
+0020:test06:ar:-lf 1
+0020:test06:ou:2.0
+0020:test06:ex:0
+
+0020:test07:in:0 -12 12
+0020:test07:ar:-lf 1
+0020:test07:ou:-792.0
+0020:test07:ex:0
+
+0020:test08:in:5 0 50
+0020:test08:ar:-lf 1
+0020:test08:ou:250.0
+0020:test08:ex:0
 

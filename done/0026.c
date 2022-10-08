@@ -12,7 +12,7 @@ int solution () {
 	if (scheck != 1)
 		return 1;
 	
-	if (phi < 0 || phi > 2 * PI)
+	if (phi < 0 || phi > 2 * PI + 0.000001)
 		return 1;
 	
 	a = R * R * phi / 2;

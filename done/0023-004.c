@@ -22,9 +22,9 @@ int solution () {
 	
 	if (scheck != 3)
 		return 1;
-	if (a <= 0 || b <= 0 || c <= 0)
+	if (a < 0.000001 || b < 0.000001 || c < 0.000001)
 		return 1;
-	if ( (a + b <= c) || (b + c <= a) || (c + a <= b) )
+	if ( (a + b < c + 0.000001) || (b + c < a + 0.000001) || (c + a < b + 0.000001) )
 		return 1;
 	
 	find_angles(a, b, c, &pha, &phb, &phc);

@@ -18,7 +18,7 @@ int solution () {
 	if (scheck != 2)
 		return 1;
 	
-	if (fabs(a - b) < 0.0001)
+	if (fabs(a - b) < 0.000001)
 		return 1;
 	
 	if (a < b)
