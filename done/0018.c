@@ -19,7 +19,7 @@ int solution () {
 	s2 = 2 * r * sin(phi2);
 	s3 = 2 * r * sin(phi3);
 	
-	printf("%lf\n%lf\n%lf\n", s1, s2, s3);
+	printf("%f\n%f\n%f\n", s1, s2, s3);
 	
 	return 0;
 }

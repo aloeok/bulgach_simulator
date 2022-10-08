@@ -29,7 +29,7 @@ int solution () {
 	
 	find_angles(a, b, c, &pha, &phb, &phc);
 	
-	printf("%lf\n%lf\n%lf\n", pha, phb, phc);
+	printf("%f\n%f\n%f\n", pha, phb, phc);
 	
 	return 0;
 }

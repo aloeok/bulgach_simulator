@@ -27,7 +27,7 @@ int solution () {
 			b = (a + c) / 2;
 	}
 	
-	printf("%lf\n%lf\n%lf\n", a, b, c);
+	printf("%f\n%f\n%f\n", a, b, c);
 	
 	return 0;
 }

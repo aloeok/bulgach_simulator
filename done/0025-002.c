@@ -33,7 +33,7 @@ int solution () {
 	if ( (a + b <= c) || (b + c <= a) || (c + a <= b) )
 		return 1;
 	
-	printf("%lf\n", area(a, b, c));
+	printf("%f\n", area(a, b, c));
 	
 	return 0;
 }

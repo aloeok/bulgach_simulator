@@ -20,7 +20,7 @@ int solution () {
 		y /= 10;
 	}
 	
-	printf("%lf\n%lf\n", x, y);
+	printf("%f\n%f\n", x, y);
 	
 	return 0;
 }

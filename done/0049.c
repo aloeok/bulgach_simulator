@@ -29,9 +29,9 @@ int actual_solution(double a, double b, double c) {
 	if (res == -1)
 		printf("NO\n");
 	else if (res == 0)
-		printf("%lf\n", x1);
+		printf("%f\n", x1);
 	else
-		printf("%lf\n%lf\n", x1, x2);
+		printf("%f\n%f\n", x1, x2);
 	
 	return 0;
 }

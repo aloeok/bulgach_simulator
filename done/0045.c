@@ -25,7 +25,7 @@ int solution () {
 		d = d * d;
 	}
 	
-	printf("%lf\n%lf\n%lf\n%lf\n", a, b, c, d);
+	printf("%f\n%f\n%f\n%f\n", a, b, c, d);
 	
 	return 0;
 }

@@ -76,7 +76,7 @@ int solution () {
 	bb = find_bisector(c, a, phb);
 	bc = find_bisector(a, b, phc);
 	
-	printf("%lf\n%lf\n%lf\n", ba, bb, bc);
+	printf("%f\n%f\n%f\n", ba, bb, bc);
 	
 	return 0;
 }

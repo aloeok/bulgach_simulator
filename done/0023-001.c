@@ -33,7 +33,7 @@ int solution () {
 	hb = a * sin(phc);
 	hc = b * sin(pha);
 	
-	printf("%lf\n%lf\n%lf\n", ha, hb, hc);
+	printf("%f\n%f\n%f\n", ha, hb, hc);
 	
 	return 0;
 }

@@ -18,7 +18,7 @@ int solution () {
 	if (r <= 20)
 		return 1;
 	
-	printf("%lf\n", circle_area(r) - circle_area(INR));
+	printf("%f\n", circle_area(r) - circle_area(INR));
 	
 	return 0;
 }

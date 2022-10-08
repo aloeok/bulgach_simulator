@@ -59,7 +59,7 @@ int solution () {
 	m_phi = get_minute_angle(phi);
 	get_thm(phi, &h, &m);
 	
-	printf("%lf\n%d\n%d\n", m_phi, h, m);
+	printf("%f\n%d\n%d\n", m_phi, h, m);
 	
 	return 0;
 }

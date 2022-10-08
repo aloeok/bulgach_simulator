@@ -17,7 +17,7 @@ int solution () {
 	
 	a = R * R * phi / 2;
 	
-	printf("%lf\n", a);
+	printf("%f\n", a);
 	
 	return 0;
 }

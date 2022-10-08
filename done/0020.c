@@ -20,7 +20,7 @@ int solution () {
 	if (n < 1)
 		return 1;
 	
-	printf("%lf\n", cnt2(a, d, n));
+	printf("%f\n", cnt2(a, d, n));
 	
 	return 0;
 }

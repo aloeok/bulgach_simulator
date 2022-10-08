@@ -31,7 +31,7 @@ int solution () {
 		t = solve_ac(v1, v2, a1, a2, x);
 	}
 	
-	printf("%lf\n", t);
+	printf("%f\n", t);
 	
 	return 0;
 }

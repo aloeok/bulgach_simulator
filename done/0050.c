@@ -35,7 +35,7 @@ int solution () {
 	
 	solve(a1, b1, c1, a2, b2, c2, &sol_x, &sol_y);
 	
-	printf("%lf\n%lf\n", sol_x, sol_y);
+	printf("%f\n%f\n", sol_x, sol_y);
 	
 	return 0;
 }

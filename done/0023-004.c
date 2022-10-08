@@ -32,7 +32,7 @@ int solution () {
 	r_o = a / (2 * sin(pha));
 	r_i = c / ( (1 / tan(pha / 2)) + (1 / tan(phb / 2)) );
 	
-	printf("%lf\n%lf\n", r_o, r_i);
+	printf("%f\n%f\n", r_o, r_i);
 	
 	return 0;
 }

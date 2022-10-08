@@ -19,7 +19,7 @@ int solution () {
 	
 	S = tan(phi) * (a * a - b * b) / 4;
 	
-	printf("%lf\n", S);
+	printf("%f\n", S);
 	
 	return 0;
 }

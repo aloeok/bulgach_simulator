@@ -12,7 +12,7 @@ int solution () {
 	if (a <= b)
 		a = 0;
 	
-	printf("%lf\n%lf\n", a, b);
+	printf("%f\n%f\n", a, b);
 	
 	return 0;
 }

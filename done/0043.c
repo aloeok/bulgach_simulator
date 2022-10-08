@@ -25,7 +25,7 @@ int solution () {
 	if (c >= 0)
 		c = c * c;
 	
-	printf("%lf\n%lf\n%lf\n", a, b, c);
+	printf("%f\n%f\n%f\n", a, b, c);
 	
 	return 0;
 }

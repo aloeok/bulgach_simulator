@@ -10,13 +10,13 @@ int solution () {
 		return 1;
 	
 	if (a > 1 && a < 3)
-		printf("%lf\n", a);
+		printf("%f\n", a);
 	
 	if (b > 1 && b < 3)
-		printf("%lf\n", b);
+		printf("%f\n", b);
 	
 	if (c > 1 && c < 3)
-		printf("%lf\n", c);
+		printf("%f\n", c);
 	
 	return 0;
 }

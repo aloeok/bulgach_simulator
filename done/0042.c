@@ -22,9 +22,9 @@ int solution () {
 		return 1;
 	
 	if (a < b)
-		printf("%lf\n%lf\n", half_sum(a, b), double_prod(a, b));
+		printf("%f\n%f\n", half_sum(a, b), double_prod(a, b));
 	else
-		printf("%lf\n%lf\n", double_prod(a, b), half_sum(a, b));
+		printf("%f\n%f\n", double_prod(a, b), half_sum(a, b));
 	
 	return 0;
 }

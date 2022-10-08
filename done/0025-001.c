@@ -28,7 +28,7 @@ int solution () {
 	if ( (a + b <= c) || (b + c <= a) || (c + a <= b) )
 		return 1;
 	
-	printf("%lf\n", perimeter(a, b, c));
+	printf("%f\n", perimeter(a, b, c));
 	
 	return 0;
 }

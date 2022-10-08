@@ -68,7 +68,7 @@ int solution () {
 	mb = find_median(c, a, phb);
 	mc = find_median(a, b, phc);
 	
-	printf("%lf\n%lf\n%lf\n", ma, mb, mc);
+	printf("%f\n%f\n%f\n", ma, mb, mc);
 	
 	return 0;
 }

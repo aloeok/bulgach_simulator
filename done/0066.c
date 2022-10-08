@@ -28,7 +28,7 @@ int solution () {
 	else
 		transform(&z, &x, &y);
 	
-	printf("%lf\n%lf\n%lf\n", x, y, z);
+	printf("%f\n%f\n%f\n", x, y, z);
 	
 	return 0;
 }
