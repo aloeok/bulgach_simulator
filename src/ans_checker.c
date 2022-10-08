@@ -24,6 +24,8 @@ int check_ans ();
 int main (int argc, char** argv) {
 	int exit_code;
 	
+	getc(stdin);
+	
 	exit_code = set_series_params(argc, argv);
 	if (exit_code == 1)
 		return 3;
@@ -116,8 +118,10 @@ int get_ans () {
 			if (scheck != 1)
 				return 1;
 			delim = getc(stdin);
-			if (delim >= 32)
-				return 1;
+			if (delim >= 32) {
+				exit((int)delim);
+				/*return 1;*/
+			}
 		}
 	}
 	return 0;
