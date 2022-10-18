@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
+#include "math.h"
 #define MAX_ANS_SER_CNT 10
 #define MAX_SER_DATA_CNT 10
 
