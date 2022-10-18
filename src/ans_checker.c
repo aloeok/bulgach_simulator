@@ -137,7 +137,7 @@ int check_ans () {
 						return 1;
 					break;
 				case 1:
-					if (double_ans_cor[i] != double_ans[i])
+					if (fabs(double_ans_cor[i] - double_ans[i]) >= 0.00001)
 						return 1;
 					break;
 				case 2:
