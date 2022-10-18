@@ -66,7 +66,7 @@ do
 				
 				elif [ "${CHECK_RES}" = "124" ]
 				then
-					echo "${PROG} : ${TEST_ID} : TESTER TL (incorrect output / incorrect test data)"
+					echo "${PROG} : ${TEST_ID} : TESTER TL (incorrect output format / incorrect test data)"
 					echo "Input data: ${INPUT_DATA}"
 					echo "Answer:"
 					echo "[${ANS}]"
@@ -80,7 +80,7 @@ do
 					echo "Correct answer: ${COR_ANS}"
 				elif [ "${CHECK_RES}" = "2" ]
 				then
-					echo "${PROG} : ${TEST_ID} : FAIL (incorrect output)"
+					echo "${PROG} : ${TEST_ID} : FAIL (incorrect output format)"
 					echo "Input data: ${INPUT_DATA}"
 					echo "Answer:"
 					echo "[${ANS}]"
