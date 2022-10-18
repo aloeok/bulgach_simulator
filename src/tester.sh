@@ -21,7 +21,7 @@ do
 		echo "${PROG} : Compiled"
 		echo ""
 		
-		cat "all_test_data.btdata" | grep "${PROG}" | grep "in" > "current_test_in_data.btdata"
+		cat "all_test_data.btdata" | grep "${PROG}:" | grep "in" > "current_test_in_data.btdata"
 
 		while read TEST
 		do
@@ -29,13 +29,13 @@ do
 			
 			INPUT_DATA=$(echo $TEST | cut -d ':' -f 4)
 			
-			COR_ANS=$(cat "all_test_data.btdata" | grep "${PROG}" | grep "${TEST_ID}" | grep "ou" | cut -d ':' -f 4)
+			COR_ANS=$(cat "all_test_data.btdata" | grep "${PROG}:" | grep "${TEST_ID}" | grep "ou" | cut -d ':' -f 4)
 			
-			REQ_EXIT=$(cat "all_test_data.btdata" | grep "${PROG}" | grep "${TEST_ID}" | grep "ex" | cut -d ':' -f 4)
+			REQ_EXIT=$(cat "all_test_data.btdata" | grep "${PROG}:" | grep "${TEST_ID}" | grep "ex" | cut -d ':' -f 4)
 			REQ_EXIT=${REQ_EXIT%$'\n'}
 			REQ_EXIT=${REQ_EXIT%$'\r'}
 			
-			ARG_DATA=$(cat "all_test_data.btdata" | grep "${PROG}" | grep "${TEST_ID}" | grep "ar" | cut -d ':' -f 4)
+			ARG_DATA=$(cat "all_test_data.btdata" | grep "${PROG}:" | grep "${TEST_ID}" | grep "ar" | cut -d ':' -f 4)
 			ARG_DATA=${ARG_DATA%$'\n'}
 			ARG_DATA=${ARG_DATA%$'\r'}
 			
