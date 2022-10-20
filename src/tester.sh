@@ -140,7 +140,7 @@ do
 
 	fi
 	rm "current_test_in_data.btdata" 2> /dev/null
-	rm "${PROG}"
+	rm "${PROG}" 2> /dev/null
 done < "prog_list.btdata"
 
 rm "all_test_data.btdata" 2> /dev/null
