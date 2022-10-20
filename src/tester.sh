@@ -53,7 +53,7 @@ do
 				if [ "${REQ_EXIT}" = "1" ] && [ "${ANS}" = "" ]
 				then
 					echo "${PROG} : ${TEST_ID} : OK (correct input check)"
-					echo "Tested for input: ${INPUT_DATA}"
+					#echo "Tested for input: ${INPUT_DATA}"
 				elif [ "${REQ_EXIT}" = "1" ]
 				then
 					echo "${PROG} : ${TEST_ID} : FAIL (extra output / runtime error)"
@@ -95,7 +95,7 @@ do
 				elif [ "${CHECK_RES}" = "0" ]
 				then
 					echo "${PROG} : ${TEST_ID} : OK (correct answer)"
-					echo "Tested for input: ${INPUT_DATA}"
+					#echo "Tested for input: ${INPUT_DATA}"
 				else
 					echo "${PROG} : ${TEST_ID} : TESTER ERROR ${CHECK_RES} (some real bullshit happened)"
 					echo "Input data: ${INPUT_DATA}"
