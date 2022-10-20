@@ -2,8 +2,8 @@
 #include "stdlib.h"
 #include "string.h"
 #include "math.h"
-#define MAX_ANS_SER_CNT 10
-#define MAX_SER_DATA_CNT 10
+#define MAX_ANS_SER_CNT 100
+#define MAX_SER_DATA_CNT 100
 
 int ans_series_count;
 int ans_series_params[MAX_ANS_SER_CNT][2];		/*	asp[ser_ind][0] - type (0 - int, 1 - double, 2 - string); asp[ser_ind][1] - count		*/
